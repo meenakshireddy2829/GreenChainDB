@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GreenChain DB: Sustainable Waste Management and Recycling Tracking System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1b8f3f, #47c766);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        /* Welcome Card */
+        .welcome {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .welcome h2 {
+            color: #1b8f3f;
+            margin-top: 0;
+        }
+
+        .welcome p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Section Title */
+        .section-title {
+            color: #1b8f3f;
+            margin-bottom: 20px;
+        }
+
+        /* Dashboard Cards */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .stat-card {
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .green { background: #2ecc71; }
+        .blue { background: #3498db; }
+        .orange { background: #f39c12; }
+        .purple { background: #9b59b6; }
+
+        .stat-card h3 {
+            margin: 10px 0;
+            font-size: 28px;
+        }
+
+        .stat-card p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Quick Actions */
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .action-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .action-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .action-card h3 {
+            color: #1b8f3f;
+            margin-top: 0;
+        }
+
+        .action-card p {
+            color: #666;
+        }
+
+        /* Impact Section */
+        .impact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .impact-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .impact-card h3 {
+            color: #1b8f3f;
+            margin: 10px 0;
+        }
+
+        .impact-card p {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>🌱 GreenChain DB</h1>
+        <p>Sustainable Waste Management and Recycling Tracking System</p>
+    </div>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>🌍 Welcome to GreenChain DB</h2>
+            <p>
+                GreenChain DB is a Sustainable Waste Management and Recycling
+                Tracking System designed to streamline waste collection,
+                monitor recycling activities, and support environmentally
+                responsible decision-making through efficient data management.
+            </p>
+        </div>
+
+        <h2 class="section-title">Dashboard Overview</h2>
+
+        <div class="stats">
+
+            <div class="stat-card green">
+                <h3>🏢 Centers</h3>
+                <p>1</p>
+            </div>
+
+            <div class="stat-card blue">
+                <h3>🗑️ Waste</h3>
+                <p>100 kg</p>
+            </div>
+
+            <div class="stat-card orange">
+                <h3>♻️ Plants</h3>
+                <p>2</p>
+            </div>
+
+            <div class="stat-card purple">
+                <h3>📋 Recycled</h3>
+                <p>50 kg</p>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Quick Actions</h2>
+
+        <div class="actions">
+
+            <a href="/centers" class="action-card">
+                <h3>🏢 Collection Centers</h3>
+                <p>Manage and monitor collection centers.</p>
+            </a>
+
+            <a href="/waste" class="action-card">
+                <h3>🗑️ Waste Collection</h3>
+                <p>Record and track waste collection data.</p>
+            </a>
+
+            <a href="/plants" class="action-card">
+                <h3>♻️ Recycling Plants</h3>
+                <p>Manage recycling plant information.</p>
+            </a>
+
+            <a href="/recycling" class="action-card">
+                <h3>📋 Recycling Records</h3>
+                <p>View and maintain recycling records.</p>
+            </a>
+
+        </div>
+
+        <h2 class="section-title">Environmental Impact</h2>
+
+        <div class="impact">
+
+            <div class="impact-card">
+                <h3>🌳 Trees Saved</h3>
+                <p>25</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>🌍 Carbon Reduced</h3>
+                <p>120 kg</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>💧 Water Conserved</h3>
+                <p>500 L</p>
+            </div>
+
+            <div class="impact-card">
+                <h3>♻️ Efficiency</h3>
+                <p>80%</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
